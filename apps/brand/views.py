@@ -18,5 +18,11 @@ def brand_info(request):
         brands = Brand.objects.all()
         serializers = BrandSerializer(brands, many=True)
         return Response(serializers.data, status=status.HTTP_200_OK)
-    # elif request.method == "PUT":
-    #     request.
+    elif request.method == "PUT":
+        id = request.GET.get('pk')
+        brand = Brand.objects.get(pk=id)
+        brand.description = request.POST.get('description')
+        brand.save()
+        serializer = BrandSerializer(brand)
+        return Response(serializer.data, status=status.HTTP_200_OK)
+
