@@ -6,7 +6,7 @@ from apps.brand.models import Brand
 from apps.brand.serializers import BrandSerializer
 
 
-@api_view(http_method_names=['GET', 'POST'])
+@api_view(http_method_names=['GET', 'POST', 'PUT'])
 def brand_info(request):
     if request.method == "POST":
         serializer = BrandSerializer(data=request.data)
@@ -18,3 +18,5 @@ def brand_info(request):
         brands = Brand.objects.all()
         serializers = BrandSerializer(brands, many=True)
         return Response(serializers.data, status=status.HTTP_200_OK)
+    # elif request.method == "PUT":
+    #     request.

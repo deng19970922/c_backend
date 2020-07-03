@@ -1,7 +1,10 @@
 from rest_framework import serializers
 
+from apps.brand.models import Brand
+
 
 class BrandSerializer(serializers.ModelSerializer):
     class Meta:
-        model = 'brand.Brand'
-        fields = ('id', 'name', 'status', 'description')
+        model = Brand
+        # fields = ('id', 'name', 'status', 'description')
+        fields = "__all__"
