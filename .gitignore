@@ -24,18 +24,15 @@ parts/
 sdist/
 var/
 wheels/
-<<<<<<< HEAD
 *.egg-info/
 .installed.cfg
 *.egg
-=======
 pip-wheel-metadata/
 share/python-wheels/
 *.egg-info/
 .installed.cfg
 *.egg
 MANIFEST
->>>>>>> 2cd44a9022042792f4218df9b9f6464a0f0c75b3
 
 # PyInstaller
 #  Usually these files are written by a python script from a template
@@ -50,32 +47,23 @@ pip-delete-this-directory.txt
 # Unit test / coverage reports
 htmlcov/
 .tox/
-<<<<<<< HEAD
-=======
 .nox/
->>>>>>> 2cd44a9022042792f4218df9b9f6464a0f0c75b3
 .coverage
 .coverage.*
 .cache
 nosetests.xml
 coverage.xml
 *.cover
-<<<<<<< HEAD
 .hypothesis/
-=======
 *.py,cover
-.hypothesis/
 .pytest_cache/
->>>>>>> 2cd44a9022042792f4218df9b9f6464a0f0c75b3
 
 # Translations
 *.mo
 *.pot
 
 # Django stuff:
-<<<<<<< HEAD
 staticfiles/
-=======
 *.log
 local_settings.py
 db.sqlite3
@@ -87,7 +75,6 @@ instance/
 
 # Scrapy stuff:
 .scrapy
->>>>>>> 2cd44a9022042792f4218df9b9f6464a0f0c75b3
 
 # Sphinx documentation
 docs/_build/
@@ -95,7 +82,6 @@ docs/_build/
 # PyBuilder
 target/
 
-<<<<<<< HEAD
 # pyenv
 .python-version
 
@@ -105,7 +91,6 @@ target/
 .venv
 venv/
 ENV/
-=======
 # Jupyter Notebook
 .ipynb_checkpoints
 
@@ -114,7 +99,6 @@ profile_default/
 ipython_config.py
 
 # pyenv
-.python-version
 
 # pipenv
 #   According to pypa/pipenv#598, it is recommended to include Pipfile.lock in version control.
@@ -145,7 +129,6 @@ venv.bak/
 # Spyder project settings
 .spyderproject
 .spyproject
->>>>>>> 2cd44a9022042792f4218df9b9f6464a0f0c75b3
 
 # Rope project settings
 .ropeproject
@@ -155,13 +138,11 @@ venv.bak/
 
 # mypy
 .mypy_cache/
-<<<<<<< HEAD
 
 
 ### Node template
 # Logs
 logs
-*.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
@@ -362,16 +343,13 @@ campaign_backend/media/
 .pytest_cache/
 
 
-.env
 .envs/*
 .idea/*
 
 Pipfile
 
-=======
 .dmypy.json
 dmypy.json
 
 # Pyre type checker
 .pyre/
->>>>>>> 2cd44a9022042792f4218df9b9f6464a0f0c75b3

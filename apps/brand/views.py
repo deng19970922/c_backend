@@ -1,9 +1,11 @@
 from rest_framework import status
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
+from rest_framework import viewsets
 
 from apps.brand.models import Brand
 from apps.brand.serializers import BrandSerializer
+
 
 
 @api_view(http_method_names=['GET', 'POST', 'PUT'])
@@ -26,3 +28,7 @@ def brand_info(request):
         serializer = BrandSerializer(brand)
         return Response(serializer.data, status=status.HTTP_200_OK)
 
+
+class BrandModelViewSet(viewsets.ModelViewSet):
+    queryset = Brand
+    serializer_class = BrandSerializer
