@@ -96,7 +96,7 @@ WSGI_APPLICATION = 'dengs.wsgi.application'
 env = environ.Env()
 
 # database
-DATABASES = {"default": env.db("DATABASE_URL", default='mysql://root:123456@127.0.0.1:3306/campaign?local_infile=1')}
+DATABASES = {"default": env.db("DATABASE_URL", default='mysql://root:123456@127.0.0.1:3306/dengstest?local_infile=1')}
 
 # Password validation
 # https://docs.djangoproject.com/en/2.2/ref/settings/#auth-password-validators
